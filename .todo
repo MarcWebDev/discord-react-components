@@ -1,0 +1,104 @@
+// TODO: DiscordMessage
+- profile: DiscordUserProfile(author: string, profilePicture: string, roleColor: string, bot: boolean, verified: boolean)
+- author: string
+- profilePicture: string
+- roleColor: string
+- bot: boolean
+- verified: boolean
+- timestamp: Date | string
+- highlite: boolean
+
+// TODO: DiscordMessageMarkdown 
+- type: bold | underline | italic | inline-code | spoiler | quote 
+
+// TODO: DiscordMention
+- type: role | user | channel | forum | voice | announcement | rules | command
+- roleColor: string
+
+// TODO: DiscordCommand
+- profile: DiscordUserProfile(author: string, profilePicture: string, roleColor: string, bot: boolean, verified: boolean)
+- author: string
+- profilePicture: string
+- roleColor: string
+- bot: boolean
+- verified: boolean
+- private: boolean
+- children: any
+
+// TODO: DiscordEmbed 
+- children: any
+- embedColor: string
+- title: string
+- thumbnail: string
+
+// TODO: DiscordEmbedFields
+- children: any
+- inline: boolean
+
+// TODO: DiscordEmbedField
+- name: string
+- value: string
+
+// TODO: DiscordEmbedFooter
+- profilePicture: string
+- timestamp: Date | string
+- children: any
+
+// TODO: DiscordReply
+- profile: DiscordUserProfile(author: string, profilePicture: string, roleColor: string, bot: boolean, verified: boolean)
+- author: string
+- profilePicture: string
+- roleColor: string
+- bot: boolean
+- verified: boolean
+- highlite: boolean
+
+// TODO: DiscordServerInvite
+- profile: DiscordServerProfile(name: string, profilePicture: string, verified: boolean, partnered: string, members: number, membersOnline: number)
+- name: string
+- profilePicture: string
+- verified: boolean
+- partnered: boolean
+- members: number
+- membersOnline: number
+
+// TODO: DiscordImageAttachment 
+- src: string
+- type: small | large
+
+// TODO: DiscordSystemMessage
+- type: join | announcementChannelAdd | boost | threadStart | groupAdd | callStart | callEnded | groupChangeIcon | groupChangeName | groupLeave
+- user: string
+- addedChannel: string
+- threadName: string
+- addedUser: string
+- newGroupName: string
+
+// TODO: DiscordReactionRow
+- children: any
+
+// TODO: DiscordReaction
+- icon: string
+- count: number
+- interactive: boolean
+- reacted: boolean
+
+// TODO: DiscordComponentRow
+- children: any
+
+// TODO: DiscordButton
+- type: primary | secondary | success | danger | link
+- emoji: string
+- children: any
+
+// TODO: DiscordLink
+- children: any
+
+// SOON: DiscordThread 
+COMING SOON
+
+// SOON: DiscordGif
+COMING SOON
+
+// SOON: DiscordVideo 
+COMING SOON

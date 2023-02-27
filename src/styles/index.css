@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.discord-messages,
+.discord-message {
+  font-family: sans-serif;
+}
+
+.discord-messages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}/*# sourceMappingURL=index.css.map */
