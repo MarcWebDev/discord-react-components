@@ -1,0 +1,15 @@
+{
+    // Change this to match your project
+    "include": [
+        "src/**/*"
+    ],
+    "compilerOptions": {
+        "target": "ES6",
+        "allowJs": true,
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "dist/types",
+        "declarationMap": true,
+        "moduleResolution":"Node"
+    }
+}

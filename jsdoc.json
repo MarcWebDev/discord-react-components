@@ -1,0 +1,42 @@
+{
+    "source": {
+      "include": ["src", "package.json", "README.md"],
+      "includePattern": ".js$",
+      "excludePattern": "(node_modules/|docs)"
+    },
+    "plugins": ["plugins/markdown"],
+    "opts": {
+      "encoding": "utf8",
+      "readme": "./README.md",
+      "destination": "./docs",
+      "recurse": true,
+      "verbose": true,
+      "template": "./node_modules/clean-jsdoc-theme",
+      "theme_opts": {
+        "meta": [
+          {
+            "name": "author",
+            "content": "discord-react-components"
+          },
+          {
+            "name": "description",
+            "content": "Create discord react components with ease."
+          }
+        ],
+        "menu": [
+          {
+            "title": "Github",
+            "link": "https://github.com/MarcWebDev/discord-react-components",
+            "target": "_blank"
+          }
+        ],
+        "homepageTitle": "Discord React Components",
+        "default_theme": "dark"
+      }
+    },
+    "markdown": {
+      "hardwrap": false,
+      "idInHeadings": true
+    }
+  }
+  
