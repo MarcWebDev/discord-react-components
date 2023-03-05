@@ -1,0 +1,106 @@
+.discord-message {
+  display: flex;
+  margin-top: 13px;
+  padding: 4px 16px;
+  width: 100%;
+  background-color: $background;
+
+  .avatar {
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      user-select: none;
+    }
+  }
+
+  .message {
+    .message-head {
+      display: flex;
+      align-items: flex-end;
+
+      h5 {
+        color: $text;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 1px 0 0 17px;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .bot {
+        display: flex;
+        align-items: center;
+        background-color: $blurple;
+        color: $text;
+        padding: 0px 4px;
+        border-radius: 3px;
+        margin-left: 0.25rem;
+
+        &.verified {
+          padding: 0 4px 0 0;
+        }
+
+        svg {
+          width: 15px;
+          height: 15px;
+
+          path {
+            fill: $text;
+          }
+        }
+
+        h4 {
+          font-size: 10px;
+          font-family: "Whitney", sans-serif;
+          line-height: 15px;
+          font-weight: 500;
+          color: $text;
+          cursor: default;
+        }
+      }
+
+      span {
+        font-size: 0.75rem;
+        color: $textSecondary;
+        font-weight: 400;
+        margin-left: 7px;
+        margin-bottom: 1px;
+        cursor: default;
+      }
+    }
+
+    p {
+      padding: 3px 0 0 17px;
+      font-size: 16px;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+
+  &.text-only {
+    padding: 8px 16px;
+  }
+
+  &:hover {
+    background-color: $backgroundHover;
+  }
+
+  &:last-child {
+    margin-bottom: 13px;
+  }
+
+  &.highlite {
+    border-color: $highlite;
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    background-color: $highliteOpacity;
+
+    &:hover {
+      background-color: $highliteOpacityHover;
+    }
+  }
+}

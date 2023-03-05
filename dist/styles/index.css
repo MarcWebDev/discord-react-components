@@ -1,3 +1,28 @@
+@font-face {
+  font-family: "Whitney";
+  src: url("../font/whitneylight.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Whitney";
+  src: url("../font/whitneybook.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Whitney";
+  src: url("../font/whitneymedium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Whitney";
+  src: url("../font/whitneysemibold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Whitney";
+  src: url("../font/whitneybold.otf") format("otf");
+  font-weight: 700;
+}
 *,
 *::before,
 *::after {
@@ -8,11 +33,102 @@
 
 .discord-messages,
 .discord-message {
-  font-family: sans-serif;
+  font-family: "Whitney";
 }
 
 .discord-messages {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background-color: #313338;
+  position: relative;
+}
+
+.discord-message {
+  display: flex;
+  margin-top: 13px;
+  padding: 4px 16px;
+  width: 100%;
+  background-color: #313338;
+}
+.discord-message .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.discord-message .message .message-head {
+  display: flex;
+  align-items: flex-end;
+}
+.discord-message .message .message-head h5 {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 1px 0 0 17px;
+  font-weight: 500;
+}
+.discord-message .message .message-head h5:hover {
+  text-decoration: underline;
+}
+.discord-message .message .message-head .bot {
+  display: flex;
+  align-items: center;
+  background-color: #5865f2;
+  color: #fff;
+  padding: 0px 4px;
+  border-radius: 3px;
+  margin-left: 0.25rem;
+}
+.discord-message .message .message-head .bot.verified {
+  padding: 0 4px 0 0;
+}
+.discord-message .message .message-head .bot svg {
+  width: 15px;
+  height: 15px;
+}
+.discord-message .message .message-head .bot svg path {
+  fill: #fff;
+}
+.discord-message .message .message-head .bot h4 {
+  font-size: 10px;
+  font-family: "Whitney", sans-serif;
+  line-height: 15px;
+  font-weight: 500;
+  color: #fff;
+  cursor: default;
+}
+.discord-message .message .message-head span {
+  font-size: 0.75rem;
+  color: #99aab5;
+  font-weight: 400;
+  margin-left: 7px;
+  margin-bottom: 1px;
+  cursor: default;
+}
+.discord-message .message p {
+  padding: 3px 0 0 17px;
+  font-size: 16px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.discord-message.text-only {
+  padding: 8px 16px;
+}
+.discord-message:hover {
+  background-color: #2e3035;
+}
+.discord-message:last-child {
+  margin-bottom: 13px;
+}
+.discord-message.highlite {
+  border-color: #F0B132;
+  border-style: solid;
+  border-width: 0 0 0 2px;
+  background-color: #444037;
+}
+.discord-message.highlite:hover {
+  background-color: #403D38;
 }/*# sourceMappingURL=index.css.map */

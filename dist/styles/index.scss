@@ -1,5 +1,6 @@
 // Util imports
 @import "./util/vars";
+@import "./util/font";
 
 *,
 *::before,
@@ -11,7 +12,7 @@
 
 .discord-messages,
 .discord-message {
-  font-family: sans-serif;
+  font-family: "Whitney";
 }
 
 // Component imports

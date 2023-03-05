@@ -1,5 +1,5 @@
 // Discord Messages
-declare function DiscordMessages(children: any): JSX.Element;
+declare function DiscordMessages(children: any, width?: string): JSX.Element;
 
 // Discord Message
 declare function DiscordMessage(
@@ -11,7 +11,8 @@ declare function DiscordMessage(
   bot?: boolean,
   verified?: boolean,
   timestamp?: string | Date,
-  highlite?: boolean
+  highlite?: boolean,
+  textOnly?: boolean
 ): JSX.Element;
 
 // Discord Profile

@@ -1,12 +1,6 @@
 // TODO: DiscordMessage
-- profile: DiscordUserProfile(author: string, profilePicture: string, roleColor: string, bot: boolean, verified: boolean)
-- author: string
-- profilePicture: string
-- roleColor: string
-- bot: boolean
-- verified: boolean
-- timestamp: Date | string
 - highlite: boolean
+- textOnly: boolean
 
 // TODO: DiscordMessageMarkdown 
 - type: bold | underline | italic | inline-code | spoiler | quote 
